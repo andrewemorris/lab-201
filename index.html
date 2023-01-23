@@ -24,15 +24,35 @@
     color: navy;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
   }
+
+  p {
+    font-size: 2em;
+  }
 </style>
 
 <body>
   <script src="app.js"></script>
+  <h1>Class 1 Lab</h1>
+
   <h1>Hail Earthlings!</h1>
   <h2>We have come to conquer you. Submit to your masters. You must obey.</h2>
 
-  <script>getSpecies()</script>
-  <script>getNutriment()</script>
+  <p style="color: black; background-color: white;">
+    <script>ans1 = askQuestion("What is your species")</script>
+  </p>
+  <p style="color: white; background-color: black;">"
+    <script>ans2 = askQuestion("Is your species humanoid")</script>
+  </p>
+  <p style="color: red; background-color: blue;">
+    <script>ans3 = askQuestion(" What is your growth medium")</script>
+  </p>
+  <p style="background-color: blue;color: yellow;">
+    <script>ans4 = askQuestion("Are you gamma ray tollerant")</script>
+  </p>
+  <p>
+    <script>document.write("Your answers are: " + ans1 + ", " + ans2 + ", " + ans3 + ", " + ans4) </script>
+  </p>
+
 </body>
 
 </html>
